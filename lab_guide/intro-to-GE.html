@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gemini Enterprise Workshop</title>
-  <meta name="description" content="Gemini Enterprise & NotebookLM Hands-on Workshop.">
+  <meta name="description" content="Gemini Enterprise & Gemini Notebook Hands-on Workshop.">
 
   <script>
     (function () {
@@ -320,7 +320,7 @@
   <!-- ===== Embedded lab guide content ===== -->
   <script id="lab-content" type="text/markdown">
 
-# Introduction to Gemini Enterprise & NotebookLM
+# Introduction to Gemini Enterprise & Gemini Notebook
 
 > **For participants:** In this workshop you'll build your **own** Gemini Enterprise app inside a temporary Google Cloud lab project — nothing touches your own Google account, and there's nothing to pay. The heavy lifting is automated by a one-line script; you only do a few clicks. Just follow each step exactly; no technical knowledge needed.
 
@@ -330,7 +330,7 @@
 
 **Gemini Enterprise** brings together Gemini's advanced reasoning, Google-quality search, and your enterprise data to help employees find the right information at the right time. Its AI agents can plan, reason, and execute tasks — assisting with information retrieval, summarization, task automation, data analysis, and reporting.
 
-In this workshop, you'll set up and explore your own Gemini Enterprise app loaded with data for **Cymbal Foods**, a fictional food company. You'll use the general AI assistant to search and summarize, run a multi-agent brainstorm, build a custom agent with Agent Designer, generate a deep-research report, and finally use **NotebookLM** for focused, document-grounded analysis with an audio overview.
+In this workshop, you'll set up and explore your own Gemini Enterprise app loaded with data for **Cymbal Foods**, a fictional food company. You'll use the general AI assistant to search and summarize, run a multi-agent brainstorm, build a custom agent with Agent Designer, generate a deep-research report, and finally use **Gemini Notebook** for focused, document-grounded analysis with an audio overview.
 
 ## What you will do
 
@@ -338,7 +338,7 @@ In this workshop, you'll set up and explore your own Gemini Enterprise app loade
 - **Play with Gemini Enterprise agents** — search, summarize, and brainstorm.
 - **Build a custom Sales Assistant agent** with the visual Agent Designer.
 - **Use the Deep Research agent** to generate a multi-page report.
-- **Use NotebookLM** to analyze documents and generate an audio overview.
+- **Use Gemini Notebook** to analyze documents and generate an audio overview.
 
 ---
 
@@ -440,11 +440,11 @@ Gemini Enterprise searches **your own** Google Drive and Calendar — meaning th
    - `customer_feedback.csv`
    - `pie_chart_customer_sentiment-png.png`
 
-4. In your **Incognito window** (signed in as the lab account), open [drive.google.com](https://drive.google.com/drive/home). Confirm the account icon (top right) shows your `student-...@qwiklabs.net` account.
+3. In your **Incognito window** (signed in as the lab account), open [drive.google.com](https://drive.google.com/drive/home). Confirm the account icon (top right) shows your `student-...@qwiklabs.net` account.
 
-5. Create a folder named **`Gemini Enterprise Drive Assets`**, open it, then **drag in** the 4 files (or use **+ New → File upload**).
+4. Create a folder named **`Gemini Enterprise Drive Assets`**, open it, then **drag in** the 4 files (or use **+ New → File upload**).
 
-6. Confirm your folder contains the four files:
+5. Confirm your folder contains the four files:
 
    ![Gemini Enterprise Drive Assets in Drive](https://cdn.qwiklabs.com/D9o8GIz51ibDWWElbl8KUnD2YC5X7WDxu9spBSNoltA%3D)
 
@@ -497,7 +497,7 @@ Now build the app itself. Part A is a few clicks in the Console; Part B is one c
    - installs Terraform,
    - connects **Google Drive**, **Google Calendar**, and **Cloud Storage** data stores to your app,
    - loads the Cymbal Foods sample documents from Cloud Storage,
-   - and enables all app features (Agent Designer, Canvas, NotebookLM, …).
+   - and enables all app features (Agent Designer, Canvas, Gemini Notebook, …).
 
 ### C. Open your app
 
@@ -513,7 +513,7 @@ Now build the app itself. Part A is a few clicks in the Console; Part B is one c
 
    - **Agents:** Google-provided agents (or your own) for tasks like research and idea generation.
    - **Idea Generation:** Create a multi-agent ideation session with a team of agents.
-   - **NotebookLM:** an AI-powered research and writing assistant that works best with sources you upload.
+   - **Gemini Notebook:** an AI-powered research and writing assistant that works best with sources you upload.
    - **Deep Research:** an agentic feature that can browse hundreds of websites and create multi-page reports in minutes.
 
 > ⏳ **Heads up:** Gemini Enterprise may take **5–10 minutes** to finish indexing the data. If a search returns nothing at first, wait a few minutes and try again.
@@ -629,7 +629,7 @@ In this section, you use the visual **Agent Designer** to create a custom agent 
 8. In the preview chat bar, enter:
 
    ```
-   Summarize the key takeaways from our Q1 2026 sales records.
+   Summarize the key takeaways from our Q1 2025 sales records.
    ```
 
 9. Inspect the generated analysis.
@@ -668,9 +668,9 @@ This will take a few minutes. You can wait or continue with the next step and co
 
 ---
 
-## Step 5. Focused analysis with NotebookLM
+## Step 5. Focused analysis with Gemini Notebook
 
-Now you'll use **NotebookLM**, a tool designed for focused research and deep analysis on a specific set of documents. NotebookLM acts as your personal research assistant: you upload sources, then ask detailed questions, generate summaries, and synthesize information — with all answers grounded directly in the materials you provide.
+Now you'll use **Gemini Notebook**, a tool designed for focused research and deep analysis on a specific set of documents. Gemini Notebook acts as your personal research assistant: you upload sources, then ask detailed questions, generate summaries, and synthesize information — with all answers grounded directly in the materials you provide.
 
 ### A. Download your source files
 
@@ -684,13 +684,13 @@ Now you'll use **NotebookLM**, a tool designed for focused research and deep ana
 
 ### B. Create a Cymbal Foods analysis notebook and upload sources
 
-1. On the Gemini Enterprise home page, click **NotebookLM** on the left-hand navigation pane.
+1. On the Gemini Enterprise home page, click **Gemini Notebook** on the left-hand navigation pane.
 
-2. On the NotebookLM home page, in the Link section, click **Open**, and then click **Create New Notebook**.
+2. On the Gemini Notebook home page, in the Link section, click **Open**, and then click **Create New Notebook**.
 
 3. The **Add sources** dialog appears:
 
-   ![NotebookLM Add Sources Dialog](https://cdn.qwiklabs.com/6bB1f23%2FJ9yq4R6GjEuXkrBLSYNh35SOqRjfxGU7Oj4%3D)
+   ![Gemini Notebook Add Sources Dialog](https://cdn.qwiklabs.com/6bB1f23%2FJ9yq4R6GjEuXkrBLSYNh35SOqRjfxGU7Oj4%3D)
 
 4. **Add the text files as sources.** Click **Choose file** and select the three `.txt` files you just unzipped:
 
@@ -698,17 +698,17 @@ Now you'll use **NotebookLM**, a tool designed for focused research and deep ana
    - `customer_feedback.txt`
    - `MARKETING_data.txt`
 
-   Then wait for NotebookLM to process the sources. You should see them listed within your notebook once they're ready.
+   Then wait for Gemini Notebook to process the sources. You should see them listed within your notebook once they're ready.
 
 ![notebooklm-text-files-uploaded.png](https://cdn.qwiklabs.com/WUSdSYOrFFuTA7h7NN3HDf5qyJiEautPhvnlZ88gXog%3D)
 
-### Interacting with Your Sources in NotebookLM
+### Interacting with Your Sources in Gemini Notebook
 
 With your Cymbal Foods data loaded into the notebook, you can now ask targeted questions and explore the content.
 
-1. Take a moment to observe the NotebookLM interface. You'll typically see your added sources listed (often on the left side of the screen), a central area for the chat section, and a Studio section for your notes and the Audio Overview.
+1. Take a moment to observe the Gemini Notebook interface. You'll typically see your added sources listed (often on the left side of the screen), a central area for the chat section, and a Studio section for your notes and the Audio Overview.
 
-2. **Ask Grounded Questions to NotebookLM:** In the chat input bar, type your questions. NotebookLM will generate answers based *only* on the content of the documents you've uploaded into this specific notebook. Try the following prompts:
+2. **Ask Grounded Questions to Gemini Notebook:** In the chat input bar, type your questions. Gemini Notebook will generate answers based *only* on the content of the documents you've uploaded into this specific notebook. Try the following prompts:
 
    - **Query 1:**
      ```
@@ -717,7 +717,7 @@ With your Cymbal Foods data loaded into the notebook, you can now ask targeted q
 
    - **Query 2:**
      ```
-     Summarize the key themes from the customer_feedback.txt regarding products that had sales figures reported in Q1 2026 in the SALES_data.txt.
+     Summarize the key themes from the customer_feedback.txt regarding products that had sales figures reported in Q1 2025 in the SALES_data.txt.
      ```
 
    - **Query 3:**
@@ -730,11 +730,11 @@ With your Cymbal Foods data loaded into the notebook, you can now ask targeted q
      What are the top 3 most frequently mentioned positive aspects in the customer_feedback.txt?
      ```
 
-Notice how NotebookLM formulates its answers. The information is drawn directly from your uploaded text files. NotebookLM will often provide **citations** or highlight the source text used to generate an answer — look for these, as they help you verify the information and refer back to the original context. NotebookLM is designed for iterative exploration, so you can ask follow-up questions to dive deeper.
+Notice how Gemini Notebook formulates its answers. The information is drawn directly from your uploaded text files. Gemini Notebook will often provide **citations** or highlight the source text used to generate an answer — look for these, as they help you verify the information and refer back to the original context. Gemini Notebook is designed for iterative exploration, so you can ask follow-up questions to dive deeper.
 
-A key feature of NotebookLM is the ability to save AI responses, key passages, or your own thoughts as "notes" within the notebook. (Look for options like "Add to notes" or a dedicated notes panel.)
+A key feature of Gemini Notebook is the ability to save AI responses, key passages, or your own thoughts as "notes" within the notebook. (Look for options like "Add to notes" or a dedicated notes panel.)
 
-Beyond textual summaries and Q&A, NotebookLM offers an 'Audio Overview' feature — a spoken, podcast-like summary of the key insights from your sources.
+Beyond textual summaries and Q&A, Gemini Notebook offers an 'Audio Overview' feature — a spoken, podcast-like summary of the key insights from your sources.
 
 3. In the **Studio** section, click **Audio Overview**.
 
@@ -746,9 +746,9 @@ Beyond textual summaries and Q&A, NotebookLM offers an 'Audio Overview' feature 
 
 If you have time, experiment further with both tools:
 
-**In NotebookLM:**
+**In Gemini Notebook:**
 
-- **Different Questions:** Ask for comparisons, potential implications (based *only* on the text), or ask NotebookLM to explain a concept using examples from your documents.
+- **Different Questions:** Ask for comparisons, potential implications (based *only* on the text), or ask Gemini Notebook to explain a concept using examples from your documents.
 - **Note-Taking:** Save key AI responses and extract important quotes into notes.
 - **Other Features:** Look for suggested questions or different views.
 
@@ -761,7 +761,7 @@ If you have time, experiment further with both tools:
 
 ## Congratulations!
 
-Congratulations! You've explored Google Gemini Enterprise — interacting with agents for search and summarization, running multi-agent ideation and deep research, and performing focused document analysis with NotebookLM, even generating an audio overview. These hands-on skills are invaluable for leveraging Google's advanced AI to unlock enterprise knowledge and streamline decision-making.
+Congratulations! You've explored Google Gemini Enterprise — interacting with agents for search and summarization, running multi-agent ideation and deep research, and performing focused document analysis with Gemini Notebook, even generating an audio overview. These hands-on skills are invaluable for leveraging Google's advanced AI to unlock enterprise knowledge and streamline decision-making.
 
 ---
 
